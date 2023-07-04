@@ -1,0 +1,289 @@
+ 
+.Welcome{
+    width: 100%;
+    height:100%;
+    background-image:  url(/circle-scatter-haikei.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.Welcome *{
+    transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.header{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.containernav{
+    width: 30%;
+    position: relative;
+    display: flex;
+}
+.bodyWelcome{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.bodycontainer1{
+    max-width: 1500px;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.textlarge{
+    display: inline-block;
+    font-size: 10vh;
+    padding-left: 10%;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.textaside{
+    position: absolute;
+    transform: rotateZ(-90deg);
+    padding-left: 0px;
+    top: 29%;
+    right: 90%;
+}
+.contentimages{
+ width: 95%;
+ height: 80%;
+ position: absolute;
+ right: 0%;
+ bottom: 0%;
+ border: 0.15em solid black;
+ border-left: none;
+ border-bottom: none;
+ border-top-right-radius:4.5vmax ;
+ display: flex;
+ flex-direction: row;
+ position: relative;
+}
+.contentimagescontainer1{
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+
+.imagebody1{
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 10vmax;
+    border-top-right-radius: 100vmax;
+    border-bottom-right-radius: 100vmax;
+}
+
+.contentimagescontainer2{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.contentimagescontainer2::after{
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, explicabo ullam pariatur';
+    font-weight: 700;
+    padding-top: 16%;
+    box-sizing: border-box;
+    position: absolute;
+    top:10.2%;
+    width: 80%;
+    height: 80%;
+    background-image: linear-gradient(163.8deg,#bde9ff 54%, transparent 50%);
+    border: 1rem solid #bde9ff;
+    border-radius: 20vmax;
+    border-bottom-left-radius: 100vmax;
+    border-bottom-right-radius:100vmax ;
+    border-bottom-color: #9fd0e8;
+    border-bottom-color: #9fd0e8;
+
+}
+
+.imagebody2{
+    height: 70%;
+    clip-path: polygon(0 59%, 93% 13%, 100% 100%, 0% 100%);
+}
+
+.socialmedia{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    position: absolute;
+    right: -10%;
+    top: 5%;
+    text-align: end;
+}
+.socialmedia span{
+    font-weight: 900;
+    color: rgb(35, 34, 34);
+    cursor: pointer;
+    letter-spacing: -0.4em;
+}
+.smFB:hover,
+.smIG:hover,
+.smYT:hover,
+.smIN:hover,
+.smTW:hover{
+    letter-spacing: 0.2rem;
+}
+.smSec{
+    display: inline-block;
+    transform: scaleX(0);
+    transition:all 300ms ;
+}
+.smFB:hover span,
+.smIG:hover span,
+.smYT:hover span,
+.smIN:hover span,
+.smTW:hover span{
+    transition:all 300ms ;
+    display: inline-block;
+    transform: scaleX(1);
+    letter-spacing: 0.2rem;
+}
+.smTW{
+    text-align: end;
+}
+
+.footer{
+display: flex;
+flex-grow: 1;
+justify-content: space-evenly;
+align-items: center;
+position: relative;
+}
+
+.fcontainer1{
+    width:20% ;
+}
+
+.createpalnbtn{
+    border-radius: 76% 24% 67% 33% / 69% 35% 65% 31%;
+    height: 70%;
+    aspect-ratio: 2;
+    background-color: #ffff7700;
+    color: black;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 500;
+    border: 2px solid black;
+    transition: all 500ms;
+}
+.createpalnbtn:hover{
+    background-color: #bde9ff;
+    transition: all 500ms;
+    text-decoration-color:transparent ;
+}
+
+/*
+
+animation: rotate 5s ease-in-out infinite alternate both;
+    transform-origin: 550px 550px;
+
+@keyframes rotyar {
+0% {
+    transform: rotateY(-6deg) translateY(3%) translateZ(-20px);
+}
+
+100% {
+    transform: rotateY(4deg) rotateX(4deg) translateX(1%) translateZ(-20px);
+}
+}
+*/
+
+@media (max-width:1330px) {
+    .containernav{
+        width: 50%;
+    }
+    .iconnav{
+        display: none;
+    }
+    .socialmedia{
+        height: 90%;
+        right: -15%;
+        top:10%;
+    }
+}
+@media (max-width: 852px){
+    .textlarge{
+        font-size: 10cqw;
+    }
+    .socialmedia{
+        height: 90%;
+        right: -20%;
+        top:10%;
+    }
+    .fcontainer1{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    .header{
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+    .containernav{
+        width: 90%;
+    }
+    .textaside{
+        position: initial;
+        transform: rotateZ(0deg);
+    }
+    .contentimagescontainer1{
+        display: none;
+    }
+    .contentimagescontainer2{
+        width: 70%;
+    }
+    .bodyWelcome{
+        height: 50%;
+        display: flex;
+    }
+    .bodycontainer1{
+        width: 100%;
+    }
+    .contentimages{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 99.6%;
+    }
+    .socialmedia{
+        height: max-content;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        position: absolute;
+        right: 5%;
+        top: 100%;
+        text-align: end;
+    }
+    .footer{
+        width: 100%;
+        height: 25%;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0%;
+        flex-grow: unset;
+    }
+
+}

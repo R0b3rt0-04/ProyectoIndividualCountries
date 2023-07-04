@@ -1,0 +1,48 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  color:#174259;
+}
+.App{
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+  overflow-y: scroll;
+  background-color: #e8edeb;
+}
+.App::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra */
+}
+
+/* Pista de la barra */
+.App::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Color de fondo de la pista */
+}
+
+/* Manija de la barra */
+.App::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de fondo de la manija */
+}
+
+/* Manija de la barra al pasar el cursor sobre ella */
+.App::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color de fondo de la manija al pasar el cursor */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

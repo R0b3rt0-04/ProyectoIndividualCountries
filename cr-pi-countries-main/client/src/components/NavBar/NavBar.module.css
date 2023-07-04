@@ -1,0 +1,33 @@
+.NavBar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+a{
+    color:#174259;
+}
+.ul{
+    list-style: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ul li{
+    font-weight: 650;
+    text-decoration: underline;
+    display: inline-block;
+    transition: all 2000ms;
+}
+.ul li:hover{
+    transition: transform 600ms;
+    text-decoration-color:transparent ;
+    color: black;
+    transform: scale(1.5);
+    cursor: pointer;   
+}

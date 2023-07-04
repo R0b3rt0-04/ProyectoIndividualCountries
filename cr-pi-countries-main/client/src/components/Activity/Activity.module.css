@@ -1,0 +1,18 @@
+ 
+.Activity{
+    background-color: aliceblue;
+    width: 20%;
+    min-width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .Activity{
+        width: 45%;
+        min-width: 45%;
+
+    }
+
+}
